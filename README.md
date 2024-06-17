@@ -107,3 +107,50 @@ console.log(undefined == 0);   // false
 console.log(undefined === 0);  // false
 
 ```
+
+# JavaScript Data Types
+
+## Primitive Data Types
+JavaScript has 7 primitive data types:
+
+1. **String**
+2. **Number**
+3. **Boolean**
+4. **null**
+5. **undefined**
+6. **Symbol**
+7. **BigInt**
+
+### Examples:
+
+```javascript
+const score = 100;           // Number
+const scoreVal = 100.36;     // Number
+
+const isLoggedIn = false;    // Boolean
+const outsideTemp = null;    // null
+let userEmail;               // undefined
+
+const id = Symbol('123');    // Symbol
+const anotherId = Symbol('123');
+console.log(id === anotherId); // false: Symbol data type always returns unique values.
+
+const bigInteger = 23677889900746234n; // BigInt: 'n' makes it a BigInt
+```
+
+```javascript
+# Reference Type:
+// Array, Object , Functions.
+
+const heros = ["shaktiman","nagraj","doga"];
+let myObj = {
+    name : "azeem",
+    age : 22
+}
+
+const myFunction = function(){
+    console.log("Hello World.")
+}
+
+console.log("datatype of bigInt :", typeof bigInt) //undefined.
+```
