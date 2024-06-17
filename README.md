@@ -50,6 +50,9 @@ console.log("--- # TRICKY CONVERSION ---");
 In JavaScript, type conversions can sometimes lead to unexpected results. Here are a few examples:
 
 ```javascript
+
+=========================================
+
 // When converting a non-zero number to a boolean, the result is `true`
 console.log(Boolean(1 + 2)); // true
 
@@ -72,3 +75,35 @@ console.log(num1); // 4
 let num1, num2, num3;
 num1 = num2 = num3 = 2 + 2;
 console.log(num1) // 4
+
+```
+
+# JavaScript Type and Value Comparisons
+
+Understanding how JavaScript handles type and value comparisons can help avoid unexpected results. Below are some examples:
+
+```javascript
+// When comparing a string that represents a number to a number, JavaScript attempts to convert the string to a number
+=========================================
+console.log("02" > 1); // true
+console.log("2" > 1);  // true
+
+console.log("--- # comparison for null ---");
+
+// `null` has special behavior in comparisons:
+console.log(null > 0);    // false
+console.log(null >= 0);   // true
+console.log(null == 0);   // false
+console.log(null === 0);  // false
+
+console.log("--- # comparison for undefined ---");
+
+// `undefined` is also unique in comparisons:
+console.log(undefined > 0);    // false
+console.log(undefined < 0);    // false
+console.log(undefined >= 0);   // false
+console.log(undefined <= 0);   // false
+console.log(undefined == 0);   // false
+console.log(undefined === 0);  // false
+
+```
