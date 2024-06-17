@@ -154,3 +154,35 @@ const myFunction = function(){
 
 console.log("datatype of bigInt :", typeof bigInt) //undefined.
 ```
+
+# Stack and Heap Memory in JavaScript :
+### 1) Primitive save in Stack,  2) Non-Primitive save in Head.
+
+``` javascript
+
+let myGoal = "skilled software engineer.";
+
+let anotherGoal = myGoal;
+anotherGoal = "Entrepreneurship";
+
+console.log("Original : ",myGoal); //skilled software engineer.
+console.log("Updated String : ",anotherGoal); //Entrepreneurship
+   
+```
+### Note : In JS variable make copies, whenever we used/assign original variable values in another variable.
+
+``` javascript 
+
+  let userOne = {
+    email : "azeem@google.com",
+    upi : "user@ybl"
+};
+
+let userTwo = userOne;
+
+console.log("Value coming as a reffrence from Heap Memory:",userTwo.email); // azeem@google.com
+
+```
+
+### Note : whenever we retrieve values from the object in another variable, value retrieve as a refrence from the Heap memory.
+
