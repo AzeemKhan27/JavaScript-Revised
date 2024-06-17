@@ -36,3 +36,6 @@ Note:
  - dataType of convertedValueInNumber :  number
  - Actual Value : azeem
  - Converted Value: NaN
+ - Converted String Number value :  33 not "33" with 
+   String() method.
+ - dataType of converted String Number value :  string
