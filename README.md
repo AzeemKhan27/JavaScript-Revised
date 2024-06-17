@@ -39,3 +39,36 @@ Note:
  - Converted String Number value :  33 not "33" with 
    String() method.
  - dataType of converted String Number value :  string
+
+
+## Conversion in JS : 
+
+console.log("--- # TRICKY CONVERSION ---");
+
+# Tricky Conversion : 
+
+In JavaScript, type conversions can sometimes lead to unexpected results. Here are a few examples:
+
+```javascript
+// When converting a non-zero number to a boolean, the result is `true`
+console.log(Boolean(1 + 2)); // true
+
+// The unary plus operator (+) converts its operand to a number
+console.log(+true); // 1
+console.log(+false); // 0
+
+// The string "false" cannot be converted to a number, so the result is NaN (Not-a-Number)
+console.log(+"false"); // NaN
+
+// An empty string converts to 0
+console.log(+""); // 0
+
+// Variables can be assigned in a chain. All variables will be set to the result of the expression on the right-hand side.
+let num1, num2, num3;
+num1 = num2 = num3 = 2 + 2;
+console.log(num1); // 4
+
+
+let num1, num2, num3;
+num1 = num2 = num3 = 2 + 2;
+console.log(num1) // 4
