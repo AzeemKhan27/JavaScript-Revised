@@ -186,3 +186,9 @@ console.log("Value coming as a reffrence from Heap Memory:",userTwo.email); // a
 
 ### Note : whenever we retrieve values from the object in another variable, value retrieve as a refrence from the Heap memory.
 
+
+# 1) Optional chaining : 
+### is a feature in JS that allows you to access properties of an object or elements of an array without having to check whether the object or array is null or undefined first, It is represented by the "?." operator and can be used to concisely access deeply nested properties without having to write a long chain of if statements to check for null or undefined values. 
+
+
+
